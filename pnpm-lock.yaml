@@ -68,6 +68,9 @@ importers:
       astro-icon:
         specifier: ^1.1.5
         version: 1.1.5
+      fa6-brands:linkedin:
+        specifier: link:@iconify-json/fa6-brands:linkedin
+        version: link:@iconify-json/fa6-brands:linkedin
       hastscript:
         specifier: ^9.0.1
         version: 9.0.1
