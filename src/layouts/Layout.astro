@@ -101,6 +101,25 @@ const bannerOffset =
 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		{
+			import.meta.env.PROD && siteConfig.googleAnalyticsID && (
+				<>
+					<script
+						async
+						src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.googleAnalyticsID}`}
+					/>
+					<script define:vars={{ id: siteConfig.googleAnalyticsID }}>
+						window.dataLayer = window.dataLayer || [];
+						function gtag() {
+							dataLayer.push(arguments);
+						}
+						gtag("js", new Date());
+
+						gtag("config", id);
+					</script>
+				</>
+			)
+		}
 		{favicons.map(favicon => (
 			<link rel="icon"
 				  href={favicon.src.startsWith('/') ? url(favicon.src) : favicon.src}
@@ -146,6 +165,7 @@ const bannerOffset =
 		<slot name="head"></slot>
 
 		<link rel="alternate" type="application/rss+xml" title={profileConfig.name} href={`${Astro.site}rss.xml`}/>
+
 
 	</head>
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}

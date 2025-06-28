@@ -23,9 +23,11 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         with:
-          node-version: 22
+          node-version: 23
           # path: . # The root location of your Astro project inside the repository. (optional)
           # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+        env: 
+          GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
 
   deploy:
     needs: build

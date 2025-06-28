@@ -24,7 +24,7 @@ export type SiteConfig = {
 		enable: boolean;
 		depth: 1 | 2 | 3;
 	};
-
+	googleAnalyticsID?: string;
 	favicon: Favicon[];
 };
 
