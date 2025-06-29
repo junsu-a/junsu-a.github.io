@@ -32,29 +32,29 @@ lang: 'kr'
 ## Google Analytics 계정 생성
 
 1. 어카운트 이름 설정
-![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-08-36.png)
+![](./images/2025-06-28-16-08-36.png)
 
 2. 속성 설정. 단순히 제 블로그 이름을 적고 밴쿠버 시간대로 설정했습니다.
-![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-12-51.png)
+![](./images/2025-06-28-16-12-51.png)
 
 3. 어떤 카테고리로 정해야 할지 고민이 되더라구요... 그래서 제일 만만해보이는 온라인 커뮤니티로 설정
-![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-13-36.png)
+![](./images/2025-06-28-16-13-36.png)
 
 4. 이 부분은 정말 중요하지 않아 보여서 제일 직관적인걸로 골라주고
-![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-14-18.png)
+![](./images/2025-06-28-16-14-18.png)
 
 5. 웹버전 블로그이니 플랫폼은 웹으로
-![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-14-44.png)
+![](./images/2025-06-28-16-14-44.png)
 
 6. 제 블로그 url과 단순히 블로그 이름으로 데이터 스트림 생성을 완료합니다
-![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-15-59.png)
+![](./images/2025-06-28-16-15-59.png)
 
 # 블로그와 Google Analytics 연동하기
 
-![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-20-49.png)
+![](./images/2025-06-28-16-20-49.png)
 그 후 방금 생성한 데이터 스트림에서 ID 확인이 가능합니다.
 
-![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-24-08.png)
+![](./images/2025-06-28-16-24-08.png)
 그리고 오른쪽 위에 있는 태그 설명에서 어떤 스크립트를 추가해야하는지 확인이 가능하고, 스크립트 추가 후 테스트 기능도 있습니다.
 
 ## 1단계: 설정 정보를 한곳으로 모으기
@@ -94,7 +94,7 @@ export type Favicon = {
 
 먼저, GitHub 레포지토리의 Settings > Secrets and variables > Actions 메뉴에서 GOOGLE_ANALYTICS_ID라는 이름으로 시크릿을 추가합니다.
 
-![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-32-14.png)
+![](./images/2025-06-28-16-32-14.png)
 
 그런 다음, src/config.ts 파일을 수정하여 코드에서 직접 ID를 읽는 대신 환경 변수에서 읽어오도록 변경합니다.
 그 후 GitHub Actions 워크플로우 파일(`.github/workflows/deploy.yaml`)을 아래와 같이 수정하여 빌드 시점에 시크릿을 환경 변수로 주입하도록 설정합니다.
@@ -157,7 +157,7 @@ export type Favicon = {
 테스트는 언제나 중요하니까요.
 
 배포가 끝난 후, Google Analytics에서 제공하는 테스트를 실행해보니 성공하는 것을 확인 할 수 있었습니다.
-![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-54-00.png)
+![](./images/2025-06-28-16-54-00.png)
 
 # 마무리
 

@@ -32,29 +32,29 @@ I don't have immediate plans to run ads, but I never know what the future holdsâ
 ## Creating a Google Analytics Account
 
 1.  Set an account name.
-    ![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-08-36.png)
+    ![](./images/2025-06-28-16-08-36.png)
 
 2.  Set up the property. I just entered my blog's name and set the time zone to Vancouver.
-    ![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-12-51.png)
+    ![](./images/2025-06-28-16-12-51.png)
 
 3.  I wasn't sure which category to choose... so I went with "Online Communities" as it seemed the most fitting.
-    ![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-13-36.png)
+    ![](./images/2025-06-28-16-13-36.png)
 
 4.  This part didn't seem very important, so I picked the most intuitive option.
-    ![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-14-18.png)
+    ![](./images/2025-06-28-16-14-18.png)
 
 5.  Since it's a web-based blog, I chose "Web" as the platform.
-    ![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-14-44.png)
+    ![](./images/2025-06-28-16-14-44.png)
 
 6.  I complete the data stream creation with my blog URL and a simple stream name.
-    ![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-15-59.png)
+    ![](./images/2025-06-28-16-15-59.png)
 
 # Integrating Google Analytics with the Blog
 
-![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-20-49.png)
+![](./images/2025-06-28-16-20-49.png)
 Afterward, you can find the Measurement ID in the data stream you just created.
 
-![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-24-08.png)
+![](./images/2025-06-28-16-24-08.png)
 And in the tag instructions at the top right, you can see which script to add, and there's also a feature to test the script after adding it.
 
 ## Step 1: Centralizing Configuration
@@ -97,7 +97,7 @@ First, I'll add a new secret named `GOOGLE_ANALYTICS_ID` in the GitHub repositor
 Then, I'll modify the `src/config.ts` file to read the ID from an environment variable instead of directly from the code.
 After that, I'll update the GitHub Actions workflow file (.github/workflows/deploy.yaml) to inject the secret as an environment variable at build time.
 
-![](../../content/posts/adopt-viewer-analytics-tool-on-blog/images/2025-06-28-16-32-14.png)
+![](./images/2025-06-28-16-32-14.png)
 
 Then, I'll modify the `src/config.ts` file to read the ID from an environment variable instead of directly from the code.
 After that, I'll update the GitHub Actions workflow file (`.github/workflows/deploy.yaml`) to inject the secret as an environment variable at build time.
