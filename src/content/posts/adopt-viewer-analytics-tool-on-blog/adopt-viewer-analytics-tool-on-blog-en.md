@@ -1,5 +1,5 @@
 ---
-title: 'Adding a Visitor Analytics Tool to My Blog'
+title: 'Adding a Visitor Analytics Tool to My GitHub Pages Blog'
 published: 2025-06-28
 description: "This post introduces how to integrate Google Analytics into a blog built with Astro and GitHub Pages. It also includes tips on securely managing your tracking ID using GitHub Actions secrets."
 image: ''
