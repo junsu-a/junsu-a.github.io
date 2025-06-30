@@ -5,7 +5,7 @@ description: 'A sleeping ThinkPad becomes a 24/7 server in another world...?'
 image: ''
 tags: [homelab, ubuntu-server]
 category: 'homelab'
-draft: true 
+draft: false 
 lang: 'en'
 ---
 

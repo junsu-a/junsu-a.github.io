@@ -5,7 +5,7 @@ description: '잠자던 씽크패드가 이세계에선 24시간 꺼지지 않�
 image: ''
 tags: [homelab, ubuntu-server]
 category: 'homelab'
-draft: true 
+draft: false 
 lang: 'kr'
 ---
 
