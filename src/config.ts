@@ -30,6 +30,7 @@ export const siteConfig: SiteConfig = {
 		depth: 2, // Maximum heading depth to show in the table, from 1 to 3
 	},
 	googleAnalyticsID: import.meta.env.GOOGLE_ANALYTICS_ID,
+	msClarityID: import.meta.env.MS_CLARITY_ID,
 	favicon: [
 		// Leave this array empty to use the default favicon
 		// {

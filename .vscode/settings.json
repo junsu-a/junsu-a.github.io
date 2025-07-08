@@ -19,5 +19,10 @@
 		"source.organizeImports.biome": "always"
 	},
 	"frontMatter.dashboard.openOnStart": false,
-	"pasteImage.basePath": "${currentFileDir}"
+	"pasteImage.basePath": "${currentFileDir}",
+	"workbench.colorCustomizations": {
+		"activityBar.background": "#38244F",
+		"titleBar.activeBackground": "#4E336F",
+		"titleBar.activeForeground": "#FBF9FC"
+	}
 }
