@@ -5,6 +5,6 @@ description: 'Astro와 GitHub Pages로 만든 블로그에 구글 애널리틱�
 image: ''
 tags: [google-analytics, blog]
 category: 'blog'
-draft: false 
+draft: true 
 lang: 'kr'
 ---
